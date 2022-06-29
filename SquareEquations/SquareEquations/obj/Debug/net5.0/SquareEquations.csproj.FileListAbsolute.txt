@@ -1,0 +1,16 @@
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.exe
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.deps.json
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.runtimeconfig.json
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.runtimeconfig.dev.json
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.dll
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\bin\Debug\net5.0\SquareEquations.pdb
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.csproj.AssemblyReference.cache
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.AssemblyInfoInputs.cache
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.AssemblyInfo.cs
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.csproj.CoreCompileInputs.cache
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.dll
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\refint\SquareEquations.dll
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.pdb
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\SquareEquations.genruntimeconfig.cache
+D:\MyProjects\MyProjects\SquareEquations\SquareEquations\obj\Debug\net5.0\ref\SquareEquations.dll

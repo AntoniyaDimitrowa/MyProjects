@@ -29,22 +29,33 @@ namespace SquareEquations
         }
         public void NOD(int a, int b)
         {
-            a = Math.Abs(a);
-            b = Math.Abs(b);
-            if (a < b)
+            int num = a;
+            int denum = b;
+            if (num < denum)
             {
-                int c = a;
-                a = b;
-                b = c;
+                int c = num;
+                num = denum;
+                denum = c;
             }
             int ost = 0;
-            while (b != 0)
+            while (denum != 0)
             {
-                ost = a % b;
-                a = b;
-                b = ost;
+                ost = num % denum;
+                num = denum;
+                denum = ost;
             }
-            int nod = a;
+            int nod = num;
+            
+            if(b/nod < 0)
+            {
+                this.num = -a / nod;
+                this.denum = -b / nod;
+            }
+            else
+            {
+                this.num = a / nod;
+                this.denum = b / nod;
+            }
         }
     }
 }

@@ -19,13 +19,13 @@ namespace SquareEquations
 
         public override string ToString()
         {
-            if(numOutsideTheRoot == 1)
-            {
-                return $"\u221A{numInsideTheRoot}";
-            }
-            else if(numInsideTheRoot == 1)
+            if(numInsideTheRoot == 1)
             {
                 return $"{numOutsideTheRoot}";
+            }
+            else if (numOutsideTheRoot == 1)
+            {
+                return $"\u221A{numInsideTheRoot}";
             }
             else
             {

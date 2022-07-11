@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,10 @@ namespace TextEditor
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedFont = comboBox1.Text;
+            if (comboBox2.SelectedIndex == -1)
+            {
+                comboBox2.SelectedIndex = 0;
+            }
             int selectedSize = int.Parse(comboBox2.Text);
             richTextBox1.Font = new Font(selectedFont, selectedSize);
         }
@@ -36,6 +41,10 @@ namespace TextEditor
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.SelectedIndex == -1)
+            {
+                comboBox1.SelectedIndex = 0;
+            }
             string selectedFont = comboBox1.Text;
             int selectedSize = int.Parse(comboBox2.Text);
             richTextBox1.Font = new Font(selectedFont, selectedSize);
@@ -104,6 +113,32 @@ namespace TextEditor
         private void btnBackgroundColorBlue_Click(object sender, EventArgs e)
         {
             richTextBox1.BackColor = Color.FromArgb(192, 255, 255);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+            richTextBox1.ForeColor = Color.Black;
+            richTextBox1.BackColor = Color.White;
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string projectName = textBox1.Text + ".doc";
+            if (File.Exists(projectName))
+            {
+                DialogResult result = MessageBox.Show($"{projectName} already exists. Do you want to replace it?", "Convirming \"Save\"", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (result == DialogResult.Yes)
+                {
+                    richTextBox1.SaveFile(projectName);
+                }
+            }
+            else
+            {
+                richTextBox1.SaveFile(projectName);
+            }
         }
     }
 }

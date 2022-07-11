@@ -9,3 +9,5 @@ D:\MyProjects\MyProjects\TextEditor\TextEditor\obj\Debug\TextEditor.csproj.Gener
 D:\MyProjects\MyProjects\TextEditor\TextEditor\obj\Debug\TextEditor.csproj.CoreCompileInputs.cache
 D:\MyProjects\MyProjects\TextEditor\TextEditor\obj\Debug\TextEditor.exe
 D:\MyProjects\MyProjects\TextEditor\TextEditor\obj\Debug\TextEditor.pdb
+D:\MyProjects\MyProjects\TextEditor\TextEditor\bin\Debug\SautinSoft.Document.xml
+D:\MyProjects\MyProjects\TextEditor\TextEditor\obj\Debug\TextEditor.csproj.CopyComplete

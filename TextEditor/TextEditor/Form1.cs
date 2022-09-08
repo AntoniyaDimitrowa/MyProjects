@@ -18,6 +18,7 @@ namespace TextEditor
             InitializeComponent();
         }
 
+        
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedFont = comboBox1.Text;
@@ -52,17 +53,68 @@ namespace TextEditor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Bold);
+            if (richTextBox1.SelectionFont != null)
+            {
+                Font currentFont = richTextBox1.SelectionFont;
+                FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Bold == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                    btnBold.BackColor = Color.WhiteSmoke;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Bold;
+                    btnBold.BackColor = Color.Silver;
+                }
+
+                richTextBox1.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
         }
 
         private void btnItalic_Click(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Italic);
+            if (richTextBox1.SelectionFont != null)
+            {
+                Font currentFont = richTextBox1.SelectionFont;
+                FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Italic == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                    btnBold.BackColor = Color.WhiteSmoke;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Italic;
+                    btnBold.BackColor = Color.Silver;
+                }
+
+                richTextBox1.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
         }
 
         private void btnUnderline_Click(object sender, EventArgs e)
         {
-            richTextBox1.Font = new Font(richTextBox1.Font, FontStyle.Underline);
+            if (richTextBox1.SelectionFont != null)
+            {
+                Font currentFont = richTextBox1.SelectionFont;
+                FontStyle newFontStyle;
+
+                if (richTextBox1.SelectionFont.Underline == true)
+                {
+                    newFontStyle = FontStyle.Regular;
+                    btnBold.BackColor = Color.WhiteSmoke;
+                }
+                else
+                {
+                    newFontStyle = FontStyle.Underline;
+                    btnBold.BackColor = Color.Silver;
+                }
+
+                richTextBox1.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
+            }
         }
 
         private void btnLetterColorBlack_Click(object sender, EventArgs e)
@@ -139,6 +191,11 @@ namespace TextEditor
             {
                 richTextBox1.SaveFile(projectName);
             }
+        }
+
+        private void btnBold_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

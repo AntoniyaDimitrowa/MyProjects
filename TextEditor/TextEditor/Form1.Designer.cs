@@ -68,35 +68,40 @@
             // 
             // btnBold
             // 
-            this.btnBold.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnBold.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBold.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnBold.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnBold.Location = new System.Drawing.Point(218, 12);
             this.btnBold.Name = "btnBold";
             this.btnBold.Size = new System.Drawing.Size(28, 26);
             this.btnBold.TabIndex = 1;
             this.btnBold.Text = "B";
-            this.btnBold.UseVisualStyleBackColor = true;
+            this.btnBold.UseVisualStyleBackColor = false;
             this.btnBold.Click += new System.EventHandler(this.button1_Click);
+            this.btnBold.Paint += new System.Windows.Forms.PaintEventHandler(this.btnBold_Paint);
             // 
             // btnItalic
             // 
-            this.btnItalic.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnItalic.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnItalic.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Italic);
             this.btnItalic.Location = new System.Drawing.Point(252, 12);
             this.btnItalic.Name = "btnItalic";
             this.btnItalic.Size = new System.Drawing.Size(28, 26);
             this.btnItalic.TabIndex = 2;
             this.btnItalic.Text = "I";
-            this.btnItalic.UseVisualStyleBackColor = true;
+            this.btnItalic.UseVisualStyleBackColor = false;
             this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
             // 
             // btnUnderline
             // 
-            this.btnUnderline.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUnderline.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUnderline.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.btnUnderline.Location = new System.Drawing.Point(286, 12);
             this.btnUnderline.Name = "btnUnderline";
             this.btnUnderline.Size = new System.Drawing.Size(28, 26);
             this.btnUnderline.TabIndex = 3;
             this.btnUnderline.Text = "U";
-            this.btnUnderline.UseVisualStyleBackColor = true;
+            this.btnUnderline.UseVisualStyleBackColor = false;
             this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
             // 
             // label1

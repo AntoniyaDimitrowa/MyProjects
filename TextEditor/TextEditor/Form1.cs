@@ -83,12 +83,12 @@ namespace TextEditor
                 if (richTextBox1.SelectionFont.Italic == true)
                 {
                     newFontStyle = FontStyle.Regular;
-                    btnBold.BackColor = Color.WhiteSmoke;
+                    btnItalic.BackColor = Color.WhiteSmoke;
                 }
                 else
                 {
                     newFontStyle = FontStyle.Italic;
-                    btnBold.BackColor = Color.Silver;
+                    btnItalic.BackColor = Color.Silver;
                 }
 
                 richTextBox1.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
@@ -105,12 +105,12 @@ namespace TextEditor
                 if (richTextBox1.SelectionFont.Underline == true)
                 {
                     newFontStyle = FontStyle.Regular;
-                    btnBold.BackColor = Color.WhiteSmoke;
+                    btnUnderline.BackColor = Color.WhiteSmoke;
                 }
                 else
                 {
                     newFontStyle = FontStyle.Underline;
-                    btnBold.BackColor = Color.Silver;
+                    btnUnderline.BackColor = Color.Silver;
                 }
 
                 richTextBox1.SelectionFont = new Font(currentFont.FontFamily, currentFont.Size, newFontStyle);
@@ -196,6 +196,26 @@ namespace TextEditor
         private void btnBold_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLeft_Click_1(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void btnCenter_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
         }
     }
 }

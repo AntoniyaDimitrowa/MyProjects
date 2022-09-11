@@ -51,6 +51,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.btnCenter = new System.Windows.Forms.Button();
+            this.btnRight = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -95,7 +98,7 @@
             // btnUnderline
             // 
             this.btnUnderline.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnUnderline.Font = new System.Drawing.Font("Times New Roman", 10F);
+            this.btnUnderline.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnUnderline.Location = new System.Drawing.Point(286, 12);
             this.btnUnderline.Name = "btnUnderline";
             this.btnUnderline.Size = new System.Drawing.Size(28, 26);
@@ -236,11 +239,12 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 63);
+            this.richTextBox1.Location = new System.Drawing.Point(16, 87);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1049, 546);
+            this.richTextBox1.Size = new System.Drawing.Size(1049, 522);
             this.richTextBox1.TabIndex = 16;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // btnSave
             // 
@@ -319,11 +323,44 @@
             this.textBox1.Size = new System.Drawing.Size(213, 27);
             this.textBox1.TabIndex = 22;
             // 
+            // btnLeft
+            // 
+            this.btnLeft.Image = global::TextEditor.Properties.Resources.Left;
+            this.btnLeft.Location = new System.Drawing.Point(16, 44);
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.Size = new System.Drawing.Size(54, 37);
+            this.btnLeft.TabIndex = 23;
+            this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click_1);
+            // 
+            // btnCenter
+            // 
+            this.btnCenter.Image = global::TextEditor.Properties.Resources.Center;
+            this.btnCenter.Location = new System.Drawing.Point(75, 44);
+            this.btnCenter.Name = "btnCenter";
+            this.btnCenter.Size = new System.Drawing.Size(54, 37);
+            this.btnCenter.TabIndex = 24;
+            this.btnCenter.UseVisualStyleBackColor = true;
+            this.btnCenter.Click += new System.EventHandler(this.btnCenter_Click);
+            // 
+            // btnRight
+            // 
+            this.btnRight.Image = global::TextEditor.Properties.Resources.Right;
+            this.btnRight.Location = new System.Drawing.Point(134, 44);
+            this.btnRight.Name = "btnRight";
+            this.btnRight.Size = new System.Drawing.Size(54, 37);
+            this.btnRight.TabIndex = 25;
+            this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
+            this.Controls.Add(this.btnRight);
+            this.Controls.Add(this.btnCenter);
+            this.Controls.Add(this.btnLeft);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox2);
@@ -380,6 +417,9 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLeft;
+        private System.Windows.Forms.Button btnCenter;
+        private System.Windows.Forms.Button btnRight;
     }
 }
 
